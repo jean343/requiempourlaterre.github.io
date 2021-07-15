@@ -46,11 +46,13 @@ module.exports = function( grunt ){
 	grunt.registerTask( "publish", ["jade:publish"] );
 
 	grunt.registerTask( "web", "Start web server...", function(){
-		var options = this.options();
-		// var connect = require( "connect" );
-		// connect.createServer(
-		// 	connect.static( __dirname )
-		// ).listen( options.port );
+		const options = this.options();
+		const connect = require( 'connect' );
+		const serveStatic = require( 'serve-static' );
+
+		const app = connect();
+		app.use( serveStatic( __dirname ) );
+		app.listen( options.port );
 		console.log( "http://localhost:%s", options.port );
 
 		grunt.task.run( ["watch:jade"] );
