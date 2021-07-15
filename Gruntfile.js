@@ -52,6 +52,7 @@ module.exports = function( grunt ){
 
 		const app = connect();
 		app.use( serveStatic( __dirname ) );
+		app.use( serveStatic( "static" ) );
 		app.listen( options.port );
 		console.log( "http://localhost:%s", options.port );
 
