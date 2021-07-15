@@ -47,8 +47,8 @@ module.exports = function( grunt ){
 
 	grunt.registerTask( "web", "Start web server...", function(){
 		const options = this.options();
-		const connect = require( 'connect' );
-		const serveStatic = require( 'serve-static' );
+		const connect = require( "connect" );
+		const serveStatic = require( "serve-static" );
 
 		const app = connect();
 		app.use( serveStatic( __dirname ) );
