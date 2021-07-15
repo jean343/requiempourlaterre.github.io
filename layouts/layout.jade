@@ -21,15 +21,15 @@ html
         }(document, 'script', 'facebook-jssdk'));
       .face
       .menu
-        a(href="/")
+        a(href="index.html")
           span(class=(page==='' ? 'menu_item selected' : 'menu_item')) Accueil
-        a(href="/biographie")
+        a(href="biographie.html")
           span(class=(page==='biographie' ? 'menu_item selected' : 'menu_item')) Biographie
-        a(href="/livre")
+        a(href="livre.html")
           span(class=(page==='livre' ? 'menu_item selected' : 'menu_item')) Livre
-        a(href="/commander")
+        a(href="commander.html")
           span(class=(page==='commander' ? 'menu_item selected' : 'menu_item')) Commander
-        a(href="/remerciements")
+        a(href="remerciements.html")
           span(class=(page==='remerciements' ? 'menu_item selected' : 'menu_item')) Remerciements
 
       .menu_name FRANCINE LEFEBVRE
@@ -40,23 +40,23 @@ html
         .sideBanner_item.padding
           img(src="images/page_principale.png")
           div(style="text-align: center; margin-top: 15px;")
-            a(href="commander")
+            a(href="commander.html")
               .button.yellow.large Commander
 
         .sideBanner_item.padding
           .align_center
             h1 Aperçu du livre
-            a(href="premierChapitre")
+            a(href="premierChapitre.html")
               .button.blue.large Premier chapitre<br /> Offert gracieusement.
 
 
         .sideBanner_item
           .align_center(style="margin: 10px;")
-                a(href="/contact")
+                a(href="contact.html")
                   .button.blue.large Contactez-nous
                 br
                 br
-                a(href="/contact")
+                a(href="contact.html")
                   .button.blue.large Commentaires
         .sideBanner_item
           // twitter
@@ -92,17 +92,17 @@ html
           block footer
             .footer
               .footer_links
-                a(href="/contact") Contactez-nous
+                a(href="contact.html") Contactez-nous
               .footer_copyright Copyright © 2020 Francine Lefebvre. Tous droits réservés.
             // Piwik
-            script.
-              var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.requiempourlaterre.com/piwik/" : "http://www.requiempourlaterre.com/piwik/");
-              document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-              </script><script type="text/javascript">
-              try {
-              var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
-              piwikTracker.trackPageView();
-              piwikTracker.enableLinkTracking();
-              } catch( err ) {}
-              </script><noscript><p><img src="http://www.requiempourlaterre.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+            //script.
+            //  var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.requiempourlaterre.com/piwik/" : "http://www.requiempourlaterre.com/piwik/");
+            //  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+            //  </script><script type="text/javascript">
+            //  try {
+            //  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+            //  piwikTracker.trackPageView();
+            //  piwikTracker.enableLinkTracking();
+            //  } catch( err ) {}
+            //  </script><noscript><p><img src="http://www.requiempourlaterre.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
             //End Piwik Tracking Code
