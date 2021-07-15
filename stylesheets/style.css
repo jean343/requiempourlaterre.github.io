@@ -64,7 +64,7 @@ body.radialGradient {
 }
 
 .face {
-    background-image: url(/images/Face.png);
+    background-image: url(images/Face.png);
     position: absolute;
     top: 50px;
     left: 630px;
@@ -166,7 +166,7 @@ body.radialGradient {
     line-height: 1.4em;
 }
 .table_des_matieres>div {
-    background-image:url(/images/dot.png);
+    background-image:url(images/dot.png);
     background-repeat:repeat-x;
     background-position:100% 95%;
     margin-bottom:8px;
@@ -179,7 +179,7 @@ body.radialGradient {
 
 .separation {
     margin: 20px 0;
-    background-image: url(/images/Separator.png);
+    background-image: url(images/Separator.png);
     height: 3px;
 }
 .footer_links, .footer_links a {
