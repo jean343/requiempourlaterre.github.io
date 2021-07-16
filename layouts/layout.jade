@@ -1,0 +1,108 @@
+doctype html
+html
+  head
+    title Requiem pour la Terre
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    link(rel="stylesheet" href="stylesheets/reset.css" type="text/css")
+    link(rel="stylesheet" href="stylesheets/style.css" type="text/css")
+    link(rel="stylesheet" href="stylesheets/buttons.css" type="text/css")
+    link(rel="stylesheet" href="stylesheets/premierChapitre.css" type="text/css")
+    //script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+  body.radialGradient
+    block menu
+      #fb-root
+      script.
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/fr_CA/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+      .face
+      .menu
+        a(href="index.html")
+          span(class=(page==='' ? 'menu_item selected' : 'menu_item')) Accueil
+        a(href="biographie.html")
+          span(class=(page==='biographie' ? 'menu_item selected' : 'menu_item')) Biographie
+        a(href="livre.html")
+          span(class=(page==='livre' ? 'menu_item selected' : 'menu_item')) Livre
+        a(href="commander.html")
+          span(class=(page==='commander' ? 'menu_item selected' : 'menu_item')) Commander
+        a(href="remerciements.html")
+          span(class=(page==='remerciements' ? 'menu_item selected' : 'menu_item')) Remerciements
+
+      .menu_name FRANCINE LEFEBVRE
+
+    block side
+      .sideBanner
+
+        .sideBanner_item.padding
+          img(src="images/page_principale.png")
+          div(style="text-align: center; margin-top: 15px;")
+            a(href="commander.html")
+              .button.yellow.large Commander
+
+        .sideBanner_item.padding
+          .align_center
+            h1 Aperçu du livre
+            a(href="premierChapitre.html")
+              .button.blue.large Premier chapitre<br /> Offert gracieusement.
+
+
+        .sideBanner_item
+          .align_center(style="margin: 10px;")
+                a(href="contact.html")
+                  .button.blue.large Contactez-nous
+                br
+                br
+                a(href="contact.html")
+                  .button.blue.large Commentaires
+        .sideBanner_item
+          // twitter
+          div(style="margin: 10px 0;")
+            a.twitter-follow-button(href="https://twitter.com/FrancineLefevre" data-show-count="true" data-lang="fr" data-size="large" data-show-screen-name="false") Follow @FrancineLefevre
+            script.
+              !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			
+          // linkedin
+          div(style="margin: 10px 0; position: relative;")
+          script(src="//platform.linkedin.com/in.js")
+          script(type="IN/MemberProfile" data-id="http://www.linkedin.com/pub/francine-lefebvre/47/247/79b" data-format="inline" data-width="292" data-related="false")
+
+          br
+
+          // facebook
+          a(href="http://www.facebook.com/profile.php?id=100003011048052")
+            .button.white.large
+              span(style="vertical-align: middle;") Suivez Francine Lefebvre sur
+                img(style="vertical-align: middle;" src="images/facebook_24x24.png")
+          br
+          br
+          .fb-like-box(data-href="http://www.facebook.com/pages/Requiem-pour-la-Terre/305800949437943" data-width="292" data-height="392" data-colorscheme="dark" data-show-faces="true" data-stream="true" data-header="true")
+
+      div &nbsp;
+      .content
+        block title
+          h1 Requiem <br />pour la Terre
+        .content_gray
+          block content
+
+          .separation
+          block footer
+            .footer
+              .footer_links
+                a(href="contact.html") Contactez-nous
+              .footer_copyright Copyright © 2020 Francine Lefebvre. Tous droits réservés.
+            // Piwik
+            //script.
+            //  var pkBaseURL = (("https:" == document.location.protocol) ? "https://www.requiempourlaterre.com/piwik/" : "http://www.requiempourlaterre.com/piwik/");
+            //  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+            //  </script><script type="text/javascript">
+            //  try {
+            //  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+            //  piwikTracker.trackPageView();
+            //  piwikTracker.enableLinkTracking();
+            //  } catch( err ) {}
+            //  </script><noscript><p><img src="http://www.requiempourlaterre.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+            //End Piwik Tracking Code

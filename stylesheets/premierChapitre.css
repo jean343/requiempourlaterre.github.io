@@ -1,0 +1,17 @@
+.premierChapitre_poeme {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 30px;
+    position: relative;
+}
+.premierChapitre_poeme .quote {
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+.premierChapitre.content_gray_summary {
+    background-color: white;
+}
+.premierChapitre.content_gray_summary, .premierChapitre.content_gray_summary * {
+    color: black;
+}
